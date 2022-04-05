@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/148761335b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section id="secForm">
+            <h1>Jugadores</h1> hola
+            <form action="">
+                <input type="text" placeholder="Nombre" id="iName">
+                <input type="text" placeholder="Nacionalidad" id="iNacionality">
+                <input type="text" placeholder="Posición" id="iPosition">
+                <input type="number" placeholder="Edad" id="iAge">
+                <button id="btnAddUpdate">AGREGAR</button>
+            </form>
+        </section>
+        <section id="secTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th></i></th>
+                        <th></th>
+                        <th>Nombre</th>
+                        <th>Nacionalidad</th>
+                        <th>Posición</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody id="tBodyPlayers">
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/models/Players.js"></script>
+    <script src="./js/controllers/players.js"></script>
+
+</body>
+</html>

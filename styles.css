@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    padding: 20px 10px;
+}
+
+/*FORM*/
+#secForm{
+    padding: 20px;
+}
+
+#secForm > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#secForm > form > input{
+    padding: 10px 8px;
+    border-radius: 6px;
+    border: 2px solid rgb(185, 184, 185);
+}
+
+#secForm > form > input:hover{
+    border: 2px solid rgb(44, 41, 44);
+}
+
+#secForm > form > button{
+    padding: 10px 8px;
+    border-radius: 99px;
+    border: none;
+    background-color: antiquewhite;
+    color: black;
+}
+
+#secForm > form > button:hover{
+    transform: scale(0.99);
+    cursor: pointer;
+}
+
+#secForm > h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/*TABLE*/
+
+
+#secTable > table{
+    width: 100%;
+}
+
+#secTable > table,td,th,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#secTable > table > thead > tr > th{
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    padding: 10px 0px;
+}
+
+#secTable > table > tbody > tr > td{
+    text-align: center;
+    padding: 5px 0px;
+    background-color: antiquewhite;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main{
+        grid-template-columns: 1fr 1.5fr;
+    }
+}
+
